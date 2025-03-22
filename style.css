@@ -2,4 +2,20 @@ body {
   background-color: #ffc107;
 }
 
+.dropbtn {
+  background-color: #3498D8;
+  color: white;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position:absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.show{display:block;}
+
+
+
+
 /*# sourceMappingURL=style.css.map */
