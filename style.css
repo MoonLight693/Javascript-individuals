@@ -8,12 +8,8 @@ body {
   cursor: pointer;
 }
 .dropdown-content { 
-  display: none;
-  /*position:absolute;*/  
+  display: none;  
 }
 .show{display:block;}
-
-
-
 
 /*# sourceMappingURL=style.css.map */
