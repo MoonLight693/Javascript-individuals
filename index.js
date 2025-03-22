@@ -17,8 +17,11 @@ window.onclick = function(event) {
     }
   }
 
-
-  function sortTable() {
+ /**
+  * 
+  * @param {boolean} order signifies whether to sort prices numerically ascending or descending
+  */
+  function sortTable(order) {
     var table, rows, switching, i, x, y, shouldSwitch;
     table = document.getElementById("myTable");
     switching = true;
@@ -38,11 +41,23 @@ window.onclick = function(event) {
         x = rows[i].getElementsByTagName("TD")[2];
         y = rows[i + 1].getElementsByTagName("TD")[2];
         //check if the two rows should switch place:
-        if (Number(x.innerHTML) > Number(y.innerHTML)) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
+        //do we want to sort lowest to highest?
+        if(order == 0) {
+            if (Number(x.innerHTML) > Number(y.innerHTML)) {
+                //if so, mark as a switch and break the loop:
+                shouldSwitch = true;
+                break;
+            }
         }
+        //do we want to sort highest to lowest?
+        if(order == 1) {
+            if (Number(x.innerHTML) < Number(y.innerHTML)) {
+                //if so, mark as a switch and break the loop:
+                shouldSwitch = true;
+                break;
+                }
+        }
+
       }
       if (shouldSwitch) {
         /*If a switch has been marked, make the switch
