@@ -3,7 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -169,11 +170,10 @@
                 <div class="container ml-4 mt-5 mr-3 pl-0 pr-5 text-left">
                     <h2 class="text-left">Parts</h2>
                 </div>
-                <div class="container ml-4 mt-0 mr-3 pl-0 pr-5 text-left">
-
+                <div class="container ml-4 mt-0 mr-3 pl-0 pr-5 text-left" id="parts">
                     <thead>Car Parts Inventory:</thead>
-    
                     <title>HTML Table Example</title>
+                   
                     <style>
                         #Parts {
                             text-align: center;
@@ -192,30 +192,32 @@
                             padding: 8px;
                             text-align: center;
                             border: 1px solid black;
-                        }
-    
-                 
+                        } 
+
                     </style>
-    
-    
+                    
                     <details>
+                        <!--message-->
                         <p class>
                             We are also happy to provide our cost/part <br>
                             table. This allows our valued customers to see <br>
                             what parts are available in our stores
                         </p>
+                        <!--Sort options-->
+                        <div class = "dropdown">
+                            <button onclick="myFunction()" class="dropbtn">Sort By</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <button id="Least Expensive">Least Expensive</button>
+                                <br>
+                                <button id="Most Expensive">Most Expensive</button>
+
+                            </div>    
+                        </div>
+                        
+                        <!--table itself-->
                         <table >
                             <tbody>
-    
-    
-    
-    
-    
-    
                                 <div style="text-align: center">
-    
-    
-    
                                     <caption>(Prices may vary)</caption <colgroup>
                                     <col style="background-color: #FFFFFF">
                                     </colgroup>
@@ -224,59 +226,44 @@
                                     </colgroup>
                                     <colgroup>
                                         <col style="background-color: #FFFFFF">
-                                    </colgroup>
-                             
-    
-    
-    
+                                    </colgroup>      
                             <tfoot>
                                 <tr>
-    
                                     <th>Name</th>
                                     <th>Stock Status</th>
-                                    <th>Price</th>
-    
-                                </tr>
-                                
+                                    <th>Price</th>    
+                                </tr>               
                                 <tr>
                                     <td>Springs</td>
                                     <td>Full</td>
                                     <td>$39.99</td>
-    
                                 </tr>
                                 <tr>
                                     <td>Spark Plugs</td>
                                     <td>Half Full</td>
-                                    <td>$14.99</td>
-    
+                                    <td>$14.99</td>  
                                 </tr>
                                 <tr>
                                     <td>Oil</td>
                                     <td>Full</td>
-                                    <td>$34.99</td>
-    
+                                    <td>$34.99</td>  
                                 </tr>
                                 <tr>
                                     <td>Air Filters</td>
                                     <td>Full</td>
                                     <td>$19.99</td>
-    
                                 </tr>
                                 <tr>
                                     <td>Tires</td>
                                     <td>Half Full</td>
                                     <td>$199.99</td>
-    
                                 </tr>
                                 <tr>
                                     <td>The whole Engine</td>
                                     <td>Empty</td>
-                                    <td>$9,999.99</td>
-    
-                                </tr>
-                                
-                            </tfoot>
-    
+                                    <td>$9,999.99</td>   
+                                </tr>                              
+                            </tfoot>   
                             </tbody>
                         </table>
                         <br>
@@ -284,7 +271,6 @@
                         <button type="button" class="btn btn-primary bg-info" data-toggle="modal" data-target="#exampleModal">
                             Disclaimer
                           </button>
-    
                           <!-- Modal -->
                           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog" role="document">
