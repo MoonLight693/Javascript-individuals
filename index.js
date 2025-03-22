@@ -1,3 +1,4 @@
+
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -66,8 +67,33 @@ window.onclick = function(event) {
         switching = true;
       }
     }
-  }  
+  }
+  
+  let sorting_preferences = localStorage.getItem("sorting_preferences");
 
+  var leastExpensiveSort = document.getElementById("Least Expensive");
+  var mostExpensiveSort = document.getElementById("Most Expensive");
+  console.log(mostExpensiveSort);
+  console.log(leastExpensiveSort);
+  console.log(sorting_preferences.type);
+
+  leastExpensiveSort.addEventListener("click", function() {
+    localStorage.setItem("sorting_preferences", "");
+    sorting_preferences = localStorage.getItem("sorting_preferences");
+    console.log(Boolean(sorting_preferences));
+  })
+
+  mostExpensiveSort.addEventListener("click", function() {
+    localStorage.setItem("sorting_preferences", 1);
+    sorting_preferences = localStorage.getItem("sorting_preferences");
+    console.log(Boolean(sorting_preferences));
+  })
+
+  window.onload = function() {
+    sortTable(Boolean(sorting_preferences));
+    console.log(sorting_preferences);
+  }
+     
 
  
 
