@@ -207,7 +207,7 @@
                         <div class = "dropdown">
                             <button onclick="myFunction()" class="dropbtn">Sort By</button>
                             <div id="myDropdown" class="dropdown-content">
-                                <button id="Least Expensive">Least Expensive</button>
+                                <button onclick="sortTable()" id="Least Expensive">Least Expensive</button>
                                 <br>
                                 <button id="Most Expensive">Most Expensive</button>
 
@@ -215,7 +215,7 @@
                         </div>
                         
                         <!--table itself-->
-                        <table >
+                        <table id = "myTable">
                             <tbody>
                                 <div style="text-align: center">
                                     <caption>(Prices may vary)</caption <colgroup>
@@ -236,32 +236,32 @@
                                 <tr>
                                     <td>Springs</td>
                                     <td>Full</td>
-                                    <td>$39.99</td>
+                                    <td>39.99</td>
                                 </tr>
                                 <tr>
                                     <td>Spark Plugs</td>
                                     <td>Half Full</td>
-                                    <td>$14.99</td>  
+                                    <td>14.99</td>  
                                 </tr>
                                 <tr>
                                     <td>Oil</td>
                                     <td>Full</td>
-                                    <td>$34.99</td>  
+                                    <td>34.99</td>  
                                 </tr>
                                 <tr>
                                     <td>Air Filters</td>
                                     <td>Full</td>
-                                    <td>$19.99</td>
+                                    <td>19.99</td>
                                 </tr>
                                 <tr>
                                     <td>Tires</td>
                                     <td>Half Full</td>
-                                    <td>$199.99</td>
+                                    <td>199.99</td>
                                 </tr>
                                 <tr>
                                     <td>The whole Engine</td>
                                     <td>Empty</td>
-                                    <td>$9,999.99</td>   
+                                    <td>9999.99</td>   
                                 </tr>                              
                             </tfoot>   
                             </tbody>
