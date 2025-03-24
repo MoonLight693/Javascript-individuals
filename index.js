@@ -1,10 +1,13 @@
 
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content
+from https://www.w3schools.com/howto/howto_js_dropdown.asp */
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
 // Close the dropdown menu if the user clicks outside of it
-//from W3Schools
+//from https://www.w3schools.com/howto/howto_js_dropdown.asp
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -18,7 +21,8 @@ window.onclick = function(event) {
     }
   }
 
- /**
+ /** function for sorting table
+  *  adapted from https://www.w3schools.com/howto/howto_js_sort_table.asp
   * 
   * @param {boolean} order signifies whether to sort prices numerically ascending or descending
   */
@@ -69,26 +73,37 @@ window.onclick = function(event) {
     }
   }
   
+  //declare sorting_preferences variable
+  //local storage key is "sorting_preferences"
   let sorting_preferences = localStorage.getItem("sorting_preferences");
 
+  //connect leastExpensiveSort and mostExpensiveSort variables to their respective buttons
   var leastExpensiveSort = document.getElementById("Least Expensive");
   var mostExpensiveSort = document.getElementById("Most Expensive");
+
+  //lines for debugging
   console.log(mostExpensiveSort);
   console.log(leastExpensiveSort);
   console.log(sorting_preferences.type);
 
+  //if "Least Expensive" button is clicked
+  //"sorting_preferences" holds value ""
   leastExpensiveSort.addEventListener("click", function() {
     localStorage.setItem("sorting_preferences", "");
     sorting_preferences = localStorage.getItem("sorting_preferences");
     console.log(Boolean(sorting_preferences));
   })
 
+  //if "Most Expensive" button is clicked
+  //"sorting_preferences" holds value 1
   mostExpensiveSort.addEventListener("click", function() {
     localStorage.setItem("sorting_preferences", 1);
     sorting_preferences = localStorage.getItem("sorting_preferences");
     console.log(Boolean(sorting_preferences));
   })
 
+  //whenever the webpage is loaded
+  //sort table based on the latest value that "sorting_preferences holds"
   window.onload = function() {
     sortTable(Boolean(sorting_preferences));
     console.log(sorting_preferences);
