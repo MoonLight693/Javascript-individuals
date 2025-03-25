@@ -24,4 +24,12 @@ $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
 
+/* Add this CSS to handle visibility toggle */
+.hidden-info {
+    display: none; /* Initially hidden */
+}
+
+.hidden-info.visible {
+    display: table-row; /* Make it visible when the class 'visible' is added */
+}
 @import "../node_modules/bootstrap/scss/bootstrap";

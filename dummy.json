@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Wrench",
+    "stock": "Full",
+    "price": "$19.99",
+    "details": "A high-quality adjustable wrench."
+  },
+  {
+    "name": "Hammer",
+    "stock": "Half Full",
+    "price": "$9.99",
+    "details": "A strong hammer for all your needs."
+  },
+  {
+    "name": "Screwdriver",
+    "stock": "Empty",
+    "price": "$4.99",
+    "details": "A versatile screwdriver with multiple tips."
+  },
+  {
+    "name": "Drill",
+    "stock": "Full",
+    "price": "$79.99",
+    "details": "Cordless drill with variable speed."
+  },
+  {
+    "name": "Pliers",
+    "stock": "Half Full",
+    "price": "$15.99",
+    "details": "Durable pliers with ergonomic handles."
+  }
+]

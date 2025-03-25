@@ -4,6 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.css">
+    <script src="sort_and_add.js"></script>
 </head>
 
 <body>
@@ -193,8 +194,6 @@
                             text-align: center;
                             border: 1px solid black;
                         }
-    
-                 
                     </style>
     
     
@@ -204,79 +203,46 @@
                             table. This allows our valued customers to see <br>
                             what parts are available in our stores
                         </p>
-                        <table >
-                            <tbody>
-    
-    
-    
-    
-    
-    
-                                <div style="text-align: center">
-    
-    
-    
-                                    <caption>(Prices may vary)</caption <colgroup>
-                                    <col style="background-color: #FFFFFF">
-                                    </colgroup>
-                                    <colgroup>
-                                        <col style="background-color: #FFFFFF">
-                                    </colgroup>
-                                    <colgroup>
-                                        <col style="background-color: #FFFFFF">
-                                    </colgroup>
-                             
-    
-    
-    
-                            <tfoot>
+                        <button id="addDataButton" class="btn btn-primary">Add Dummy Data</button>
+                        <table class="table table-bordered" id="myTable">
+                            <caption class="text-center">(Prices may vary)</caption>
+                            <thead class="table-dark">
                                 <tr>
-    
-                                    <th>Name</th>
-                                    <th>Stock Status</th>
-                                    <th>Price</th>
-    
+                                    <th onclick="sortTable(0, 'text')">Name</th>
+                                    <th onclick="sortTable(1, 'stock')">Stock Status</th>
+                                    <th onclick="sortTable(2, 'num')">Price</th>
                                 </tr>
-                                
-                                <tr>
-                                    <td>Springs</td>
+                            </thead>
+                            <tbody>
+                                <tr><td>Springs</td>
                                     <td>Full</td>
                                     <td>$39.99</td>
-    
                                 </tr>
                                 <tr>
                                     <td>Spark Plugs</td>
                                     <td>Half Full</td>
                                     <td>$14.99</td>
-    
                                 </tr>
                                 <tr>
                                     <td>Oil</td>
                                     <td>Full</td>
                                     <td>$34.99</td>
-    
                                 </tr>
                                 <tr>
                                     <td>Air Filters</td>
                                     <td>Full</td>
                                     <td>$19.99</td>
-    
                                 </tr>
                                 <tr>
                                     <td>Tires</td>
                                     <td>Half Full</td>
                                     <td>$199.99</td>
-    
                                 </tr>
                                 <tr>
                                     <td>The whole Engine</td>
                                     <td>Empty</td>
                                     <td>$9,999.99</td>
-    
                                 </tr>
-                                
-                            </tfoot>
-    
                             </tbody>
                         </table>
                         <br>
@@ -364,6 +330,7 @@
                     <p>Always feel free to email us for free at: <a href="">DiMarco-Part-Support@gmail.com</a></p>
                     <p><i>If it ain't broken, we'll still fix it.</i></p>
                     <p>Credits: ChatGPT generated the story in the History portion.</p>
+                    <p>GitHub Repository: <a href="https://github.com/MoonLight693/Javascript-individuals">Javascript-Assignment</a></p>
                 </div>                
             </div>
           </div>

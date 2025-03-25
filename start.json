@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Springs",
+        "stock": "Full",
+        "price": "$39.99",
+        "details": "High-quality durable springs."
+    },
+    {
+        "name": "Spark Plugs",
+        "stock": "Half Full",
+        "price": "$14.99",
+        "details": "Best spark plugs for performance engines."
+    },
+    {
+        "name": "Oil",
+        "stock": "Full",
+        "price": "$34.99",
+        "details": "Premium synthetic motor oil."
+    },
+    {
+        "name": "Air Filters",
+        "stock": "Full",
+        "price": "$19.99",
+        "details": "Long-lasting air filters."
+    },
+    {
+        "name": "Tires",
+        "stock": "Half Full",
+        "price": "$199.99",
+        "details": "All-season tires with high durability."
+    },
+    {
+        "name": "The whole Engine",
+        "stock": "Empty",
+        "price": "$9,999.99",
+        "details": "A complete V8 engine, ready to install."
+    }
+]
