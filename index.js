@@ -84,7 +84,7 @@ window.onclick = function(event) {
   //lines for debugging
   console.log(mostExpensiveSort);
   console.log(leastExpensiveSort);
-  console.log(sorting_preferences.type);
+  //console.log(sorting_preferences.type);
 
   //if "Least Expensive" button is clicked
   //"sorting_preferences" holds value ""
